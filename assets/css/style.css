@@ -15,11 +15,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #fd680e;
+  color: #fdfdfd;
 }
 
 a:hover {
-  color: #ff8f4c;
+  color: #15BF81;
   text-decoration: none;
 }
 
@@ -39,11 +39,28 @@ barra superior
   position: relative;
 
 }
-#header .bot {
+#header .buttons  {
  
   float: right ;
+  display: flex;
+  align-items: center;
+  padding: 8px 32px;
+  gap: 16px;
+  position: absolute;
+  height: 96px;
+  left: 1500px;
+  top: 0px;
 
 }
+
+.bot1{
+  color: #FFFFFF;
+}
+
+.bot2{
+  color: #FFFFFF;
+}
+
 
 #header .logo h1 {
   font-size: 36px;
@@ -77,13 +94,15 @@ Bloco 1
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 80vh;
+
   background: url("../img/sveta-banner1.png") center center;
-  background-size: cover;
+  height: auto;
+  width: auto;
+  padding: 200px 0;
   position: relative;
-  margin-top: -80px;
-  z-index: 9;
+  background-size:cover;
+  background-repeat: no-repeat;
+
 }
 
 #hero .hero-container {
@@ -227,8 +246,29 @@ Bloco 1
 bloco 2
 # sobre
 --------------------------------------------------------------*/
+
+
 #sobre{
-background-color: #eee;
+
+background-color: #ffffff;
+background-size:cover;
+width: auto;
+height: auto;
+
+}
+
+.texto1 {
+
+  text-align: center;
+
+}
+.font1 {
+text-decoration: none;
+color: #16F28B;
+}
+.font2 {
+  text-decoration: none;
+  color: #16F28B;
 
 }
 
@@ -238,16 +278,139 @@ bloco 3
 --------------------------------------------------------------*/
 #consultoria {
   background: url("../img/sveta-banner2.png") center center;
+  background-size:cover;
+  width: auto;
+  height: auto;
 
 }
+
+.texto2 {
+
+  text-align: center;
+
+}
+
+
+.font2_1{
+  text-decoration: none;
+  color: #16F28B;
+  }
+
+
+.font2_2{  
+  text-decoration: none;
+  color: #16F28B;
+  }
+
+
+.font2_3{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+/*======== Botão ========*/
+
+.bot_orçamento {
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+border: currentColor;
+
+width: 321px;
+height: 40px;
+
+/* Sveta/Purple */
+
+background: #B238D2;
+border-radius: 100px;
+color: #ffffff;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+
+
 
 /*--------------------------------------------------------------
 bloco 4
 # Linkedln
 --------------------------------------------------------------*/
-#consultoria {
-  background-color: #eee;
+#Linkedln {
+  background-color: #ffffff;
+  background-size:cover;
+  width: auto;
+  height: auto;
 }
+
+#Linkedln .texto {
+
+  text-align: center;
+
+}
+
+
+.font3_1{
+  text-decoration: none;
+  color: #16F28B;
+
+}
+
+.font3_2{
+  text-decoration: none;
+  color: #16F28B;
+  
+}
+
+
+
+.bot_linkedln {
+
+/*=========== Botão ===========*/
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+border: currentColor;
+
+width: 250px;
+height: 40px;
+
+/* Sveta/Purple */
+
+background: #B238D2;
+border-radius: 100px;
+color: #ffffff;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -764,11 +927,314 @@ section {
 }
 
 /*--------------------------------------------------------------
+bloco 5
 # Contact Us
---------------------------------------------------------------*/
+--------------------------------------------------------------
+
+#Linkedln .title1 {
+
+  text-align: center;
+
+}
+
+#Linkedln .info1 {
+
+  text-align: center;
+
+}
+#Linkedln .title2 {
+
+  text-align: center;
+
+}
+#Linkedln .info2 {
+
+  text-align: center;
+
+}
+*/
+
+.img-fluid2{
+/* logo-principal-branco 1 */
+
+
+width: 155px;
+height: 154px;
+
+/* Inside auto layout */
+
+float: left;
+
+}
+
+.title1{
+/* Title */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 197px;
+height: 26px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+color: #ffffff;
+
+
+}
+
+
+
+
+/* ============  info1  ============= */
+
+
+
+
+
+.info1{
+
+/* Frame 1 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 199px;
+height: 88px;
+color: #000000;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+
+
+.address{
+/* info-cidade */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 204px;
+height: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.txt{
+width: 180px;
+height: 10px;
+}
+
+
+
+.linkedln{
+/* linkedln */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 154px;
+height: 24px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.instagram{
+
+/* instagram */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 158px;
+height: 24px;
+
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+
+.title2{
+/* Title */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 287px;
+height: 26px;
+color: #ffffff;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+/* ============  info2  ============= */
+
+
+
+.info2{
+/* entre em contato */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px 0px;
+gap: 24px;
+
+width: 287px;
+height: 186px;
+color: #000000;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+
+.email{
+/* info-email */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 169px;
+height: 24px;
+
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.phone{
+
+/* info-phone */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 182px;
+height: 24px;
+
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #contact{
 background-color: #15BF81;
-
+background-size:cover;
+width: auto;
+height: auto;
 }
 
 .contact .info {
