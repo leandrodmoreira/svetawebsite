@@ -39,26 +39,30 @@ barra superior
   position: relative;
 
 }
-#header .buttons  {
+.container-fluid   {
  
-  float: right ;
+  justify-content: space-between;
   display: flex;
-  align-items: center;
-  padding: 8px 32px;
+  padding: 0px 40px;
   gap: 16px;
-  position: absolute;
+  position:relative;
   height: 96px;
-  left: 1500px;
   top: 0px;
 
 }
 
+.buttons{
+  display: flex;
+  
+}
 .bot1{
   color: #FFFFFF;
+  padding: 0px 56px;
 }
 
 .bot2{
   color: #FFFFFF;
+  padding: 0px 56px;
 }
 
 
@@ -102,6 +106,12 @@ Bloco 1
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
+
+}
+
+.font{
+display: flex;
+
 
 }
 
@@ -281,12 +291,26 @@ bloco 3
   background-size:cover;
   width: auto;
   height: auto;
+  
+  flex-direction: row;
+  justify-content:flex-end;
+  display: flex;
+  align-items: center;
+  padding: 80px 320px;
 
 }
 
 .texto2 {
 
-  text-align: center;
+  text-align: left;
+  position: relative;
+  width: 400px;
+  height: 103px;
+
+  left: 10x;
+  max-width: 400px;
+  max-height: 336px;
+
 
 }
 
@@ -308,7 +332,15 @@ bloco 3
   color: #ffffff;
 }
 
+.bot{
+  padding: 30px 0px;
+  position:sticky;
+  flex-direction: row;
+  display: flex;
+  align-items:flex-end;
 
+
+}
 
 /*======== Botão ========*/
 
@@ -354,14 +386,31 @@ bloco 4
   background-size:cover;
   width: auto;
   height: auto;
-}
-
-#Linkedln .texto {
-
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
 }
+.texto3{
+  width: auto;
+  height: auto;
+  position: relative;
+  padding: 0px 40px;
 
+
+
+}
+
+.bot3{
+
+  
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+
+
+}
 
 .font3_1{
   text-decoration: none;
@@ -383,7 +432,6 @@ bloco 4
 
 
 /* Auto layout */
-
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -954,34 +1002,49 @@ bloco 5
 }
 */
 
-.img-fluid2{
+.contact{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+
+.justify-content-center{
+  display: flex;
+  align-content:flex-end;
+  align-items: baseline;
+  justify-content: flex-start;
+  
+}
+
+
+.logo2{
 /* logo-principal-branco 1 */
 
 
-width: 155px;
+
 height: 154px;
+display: flex;
+justify-content: left;
+
+padding: 0px 60px;
 
 /* Inside auto layout */
 
-float: left;
 
 }
 
 .title1{
-/* Title */
+/* Sveta Tecnologia */
 
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 10px;
 
 width: 197px;
 height: 26px;
+display: flex;
+justify-content:center;
+/* White */
+
+color: #FFFFFF;
 
 
 /* Inside auto layout */
@@ -989,7 +1052,6 @@ height: 26px;
 flex: none;
 order: 0;
 flex-grow: 0;
-color: #ffffff;
 
 
 }
@@ -998,7 +1060,6 @@ color: #ffffff;
 
 
 /* ============  info1  ============= */
-
 
 
 
@@ -1013,18 +1074,21 @@ color: #ffffff;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
+padding: 0px 20px;
 gap: 8px;
 
-width: 199px;
+
 height: 88px;
 color: #000000;
+justify-content: flex-start;
+
 
 /* Inside auto layout */
 
 flex: none;
 order: 1;
 flex-grow: 0;
+
 
 }
 
@@ -1037,26 +1101,21 @@ flex-grow: 0;
 /* Auto layout */
 
 display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
 
-width: 204px;
-height: 24px;
+
+padding: 24px 0px;
+gap: 24px;
+
+border-spacing: 0px;
+
 
 /* Inside auto layout */
 
-flex: none;
-order: 0;
+order: 1;
 flex-grow: 0;
 
 }
 
-.txt{
-width: 180px;
-height: 10px;
-}
 
 
 
@@ -1083,6 +1142,14 @@ order: 1;
 flex-grow: 0;
 
 }
+
+
+.txt{
+  width: 122px;
+  height: 17px;
+}
+
+
 
 .instagram{
 
@@ -1111,31 +1178,42 @@ flex-grow: 0;
 }
 
 
-.title2{
-/* Title */
-
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 10px;
-
-width: 287px;
-height: 26px;
-color: #ffffff;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
+.txt3{
+  width: 126px;
+  height: 17px;
 }
+
+
+
+.title2{
+/* Entre em contato conosco: */
+
+
+  height: 26px;
+  
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  
+  /* White */
+  
+  color: #FFFFFF;
+  
+  
+  /* Inside auto layout */
+  
+  display: flex;
+  justify-content: left;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px 60px;
+  
+}
+
+
+
 
 
 /* ============  info2  ============= */
@@ -1153,18 +1231,22 @@ flex-direction: column;
 align-items: flex-start;
 padding: 24px 0px;
 gap: 24px;
-
+padding: 0px 20px;
 width: 287px;
 height: 186px;
-color: #000000;
+
 
 /* Inside auto layout */
 
-flex: none;
 order: 2;
 flex-grow: 0;
 
+justify-content: left;
+
+
 }
+
+
 
 
 .email{
@@ -1191,6 +1273,13 @@ order: 0;
 flex-grow: 0;
 
 }
+
+
+.txt4{
+  width: 137px;
+  height: 17px;
+}
+
 
 .phone{
 
@@ -1219,6 +1308,10 @@ flex-grow: 0;
 }
 
 
+.txt5{
+  width: 150px;
+  height: 17px;
+}
 
 
 
@@ -1340,6 +1433,7 @@ height: auto;
 .contact .php-email-form button[type="submit"]:hover {
   background: #fd8841;
 }
+
 
 @media (max-width: 768px) {
   .contact .social-links {
