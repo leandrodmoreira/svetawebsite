@@ -27,6 +27,49 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 768px) {
+  body {
+    width:100%;
+    flex-direction: column;
+    
+  }
+}
+
+  
+
+
+/*--------------------------------------------------------------
+importação de fontes
+--------------------------------------------------------------*/
+@font-face {
+  font-family:Archivo_SemiCondensed-SemiBold;
+  src:url("../fontes/Archivo_SemiCondensed-SemiBold.ttf");
+  
+}
+@font-face {
+  font-family: Archivo-Bold;
+  src:url("../fontes/Archivo-Bold.ttf");
+  
+}
+
+@font-face {
+  font-family:Archivo-Regular;
+  src:url("../fontes/Archivo-Regular.ttf");
+
+}
+
+@font-face {
+    font-family:Archivo-SemiBold;
+    src:url("../fontes/Archivo-SemiBold.ttf");
+}
+
+@font-face {
+  font-family:Inter-Medium;
+  src:url("../fontes/Inter-Medium.ttf");
+}
+
+
+
 /*--------------------------------------------------------------
 barra superior
 # Header
@@ -46,23 +89,27 @@ barra superior
   padding: 0px 40px;
   gap: 16px;
   position:relative;
-  height: 96px;
   top: 0px;
+  align-items: center;
 
 }
 
 .buttons{
   display: flex;
-  
+  font-size: 17px;
 }
 .bot1{
   color: #FFFFFF;
-  padding: 0px 56px;
+  padding: 0px 28px;
+  font-family: Archivo-SemiBold;
+
 }
 
 .bot2{
   color: #FFFFFF;
-  padding: 0px 56px;
+  padding: 0px 28px;
+  font-family: Archivo-SemiBold;
+
 }
 
 
@@ -99,20 +146,55 @@ Bloco 1
 --------------------------------------------------------------*/
 #hero {
 
-  background: url("../img/sveta-banner1.png") center center;
-  height: auto;
-  width: auto;
-  padding: 200px 0;
+  background: url("../img/Banner-1.png") center center;
+  height: 450px;
+  width: 100%;
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
 
 }
+#hero a{
 
-.font{
+color: #16F28B;
+padding: 0px 12px;
+
+
+}  
+
+#hero b{
+  padding: 0px 12px;
+  
+}  
+
+.hero-container{
 display: flex;
 
 
+}
+.textoprinc{
+  padding: 0px 190px;
+
+}
+
+.fontbl1{
+  font-family: Archivo-Regular;
+}
+.fontbl2{
+  font-family: Archivo-Regular;
+}
+.fontbl3{
+  font-family: Archivo-Bold;
+}
+
+#hero hr{
+  width: 805px;
+  height: 1.5px;
+  background-color: #16F28B;
+  opacity: 100;
+  margin: 0 0;
+  display: flex;
+  align-items:start;
 }
 
 #hero .hero-container {
@@ -123,16 +205,15 @@ display: flex;
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:start;
   flex-direction: column;
-  text-align: center;
-  padding: 0 15px;
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  display: flex;
+  margin: 0 0;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 56px;
   line-height: 56px;
   color: rgb(255, 255, 255);
@@ -272,13 +353,25 @@ height: auto;
   text-align: center;
 
 }
+
+.cor{
+  color: #131426;
+}
+
+.txfont{
+  color: #131426;
+
+}
+
 .font1 {
 text-decoration: none;
-color: #16F28B;
+color: #15BF81;
+font-family: Archivo-Bold;
+
 }
 .font2 {
-  text-decoration: none;
-  color: #16F28B;
+text-decoration: none;
+color: #15BF81;
 
 }
 
@@ -287,11 +380,10 @@ bloco 3
 # consultoria
 --------------------------------------------------------------*/
 #consultoria {
-  background: url("../img/sveta-banner2.png") center center;
+  background: url("../img/Banner-2.png") center center;
   background-size:cover;
-  width: auto;
-  height: auto;
-  
+  width: 100%;
+  height: 450px;
   flex-direction: row;
   justify-content:flex-end;
   display: flex;
@@ -318,18 +410,21 @@ bloco 3
 .font2_1{
   text-decoration: none;
   color: #16F28B;
+  font-family: Archivo-Bold;
   }
 
 
 .font2_2{  
   text-decoration: none;
   color: #16F28B;
+  font-family: Archivo-Bold;
   }
 
 
 .font2_3{
   text-decoration: none;
   color: #ffffff;
+  font-family: Inter-Medium;
 }
 
 .bot{
@@ -415,13 +510,15 @@ bloco 4
 .font3_1{
   text-decoration: none;
   color: #16F28B;
+  font-family: Archivo-Bold;
 
 }
 
 .font3_2{
   text-decoration: none;
   color: #16F28B;
-  
+  font-family: Archivo-Bold;
+
 }
 
 
@@ -1005,22 +1102,13 @@ bloco 5
 .contact{
   display:flex;
   flex-wrap: wrap;
-
+  gap: 20px;
 }
 
 
-.justify-content-center{
-  display: flex;
-  align-content:flex-end;
-  align-items: baseline;
-  justify-content: flex-start;
-  
-}
 
-
-.logo2{
+.logo2 a{
 /* logo-principal-branco 1 */
-
 
 
 height: 154px;
@@ -1029,6 +1117,7 @@ justify-content: left;
 
 padding: 0px 60px;
 
+
 /* Inside auto layout */
 
 
@@ -1036,7 +1125,6 @@ padding: 0px 60px;
 
 .title1{
 /* Sveta Tecnologia */
-
 
 width: 197px;
 height: 26px;
@@ -1053,9 +1141,11 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
-
 }
 
+.title-font{
+  font-family: Archivo-Bold;
+}
 
 
 
@@ -1075,10 +1165,9 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px 20px;
-gap: 8px;
+gap: 10px;
+width: 250px;
 
-
-height: 88px;
 color: #000000;
 justify-content: flex-start;
 
@@ -1101,12 +1190,11 @@ flex-grow: 0;
 /* Auto layout */
 
 display: flex;
-
-
-padding: 24px 0px;
-gap: 24px;
-
-border-spacing: 0px;
+padding: 10px 0px;
+max-height: 30px;
+gap: 8px;
+width: 250px;
+font-family:Archivo-Regular;
 
 
 /* Inside auto layout */
@@ -1116,7 +1204,9 @@ flex-grow: 0;
 
 }
 
-
+.txt{
+  width: 200px;
+}
 
 
 .linkedln{
@@ -1128,25 +1218,27 @@ flex-grow: 0;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
-gap: 8px;
+flex-wrap: wrap;
+
+padding: 2px 1px;
+gap: 9px;
 
 width: 154px;
 height: 24px;
-
+font-family:Archivo-Regular;
 
 /* Inside auto layout */
 
 flex: none;
-order: 1;
-flex-grow: 0;
+order: 2;
+flex-grow: 0; /*mudar depois*/
 
 }
 
 
-.txt{
-  width: 122px;
-  height: 17px;
+.txt2{
+  width: 200px;
+
 }
 
 
@@ -1161,18 +1253,19 @@ flex-grow: 0;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+flex-wrap: wrap;
 padding: 0px;
 gap: 8px;
 
 width: 158px;
 height: 24px;
-
+font-family:Archivo-Regular;
 
 
 /* Inside auto layout */
 
 flex: none;
-order: 2;
+order: 3;
 flex-grow: 0;
 
 }
@@ -1188,10 +1281,9 @@ flex-grow: 0;
 .title2{
 /* Entre em contato conosco: */
 
-
   height: 26px;
+  width: 350px;
   
-  font-family: 'Archivo';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1208,11 +1300,12 @@ flex-grow: 0;
   justify-content: left;
   order: 0;
   flex-grow: 0;
-  padding: 0px 60px;
-  
+
 }
 
-
+.title-font2{
+  font-family: Archivo-Bold;
+}
 
 
 
@@ -1229,12 +1322,11 @@ flex-grow: 0;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 24px 0px;
-gap: 24px;
+gap: 10px;
 padding: 0px 20px;
-width: 287px;
+width: 350px;
 height: 186px;
-
+color: #000000;
 
 /* Inside auto layout */
 
@@ -1257,46 +1349,13 @@ justify-content: left;
 
 display: flex;
 flex-direction: row;
-align-items: center;
-padding: 0px;
+align-items: flex-start;
+padding: 10px 0px;
 gap: 8px;
 
 width: 169px;
 height: 24px;
-
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
-
-.txt4{
-  width: 137px;
-  height: 17px;
-}
-
-
-.phone{
-
-/* info-phone */
-
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 182px;
-height: 24px;
-
+font-family:Archivo-Regular;
 
 
 /* Inside auto layout */
@@ -1308,10 +1367,34 @@ flex-grow: 0;
 }
 
 
-.txt5{
-  width: 150px;
-  height: 17px;
+
+.phone{
+
+/* info-phone */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 0px;
+gap: 6px;
+
+width: 182px;
+height: 24px;
+font-family:Archivo-Regular;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+width: 250px;
+
 }
+
 
 
 
