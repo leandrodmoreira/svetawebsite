@@ -27,17 +27,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width: 768px) {
-  body {
-    width:100%;
-    flex-direction: column;
-    
-  }
-}
-
-  
-
-
 /*--------------------------------------------------------------
 importação de fontes
 --------------------------------------------------------------*/
@@ -76,10 +65,12 @@ barra superior
 --------------------------------------------------------------*/
 #header {
   background-color: #131426;
-  height: 80px;
+  height: 96px;
   padding: 20px 0;
   z-index: 10;
   position: relative;
+  display: flex;
+
 
 }
 .container-fluid   {
@@ -133,12 +124,6 @@ barra superior
   max-height: 40px;
 }
 
-@media (max-width: 768px) {
-  #header .logo h1 {
-    font-size: 28px;
-    padding: 8px 0;
-  }
-}
 
 /*--------------------------------------------------------------
 Bloco 1
@@ -147,11 +132,12 @@ Bloco 1
 #hero {
 
   background: url("../img/Banner-1.png") center center;
-  height: 450px;
+  height: 323px;
   width: 100%;
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
+  display: flex;
 
 }
 #hero a{
@@ -173,7 +159,7 @@ display: flex;
 
 }
 .textoprinc{
-  padding: 0px 190px;
+  padding-left:190px;
 
 }
 
@@ -187,7 +173,7 @@ display: flex;
   font-family: Archivo-Bold;
 }
 
-#hero hr{
+.linha{
   width: 805px;
   height: 1.5px;
   background-color: #16F28B;
@@ -195,6 +181,7 @@ display: flex;
   margin: 0 0;
   display: flex;
   align-items:start;
+  
 }
 
 #hero .hero-container {
@@ -214,7 +201,6 @@ display: flex;
   margin: 0 0;
   font-size: 48px;
   font-weight: 500;
-  line-height: 56px;
   line-height: 56px;
   color: rgb(255, 255, 255);
 }
@@ -312,55 +298,113 @@ display: flex;
   background: #fd8841;
 }
 
+/*--------------------------------------------------------------
+adaptação pra loyalt movel
+--------------------------------------------------------------*/
+/*-------header--------*/
+
+
+/*-------hero--------*/
+
+@media (max-width: 837px) {
+  #hero .linha {
+    width: 67%;
+
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 580px) {
+ .textoprinc{
+  padding-left:45px;
+
+}
+}
+
+@media (max-width: 435px) {
+  #hero h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+}
+
 /*@media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
 */
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+/*-------sobre--------*/
+
+
+
+/*-------consultoria--------*/
+
+
+
+/*-------linkedIn--------*/
+
+
+
+/*-------main--------*/
+
+
+
+@media (max-width: 950px) {
+  #main{
+    height: 370px;
+    background-color: #15BF81;
   }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #hero .php-email-form input {
-    margin: 0 auto;
-  }
+
 }
+
+@media (max-width: 582px) {
+  #main{
+    height: 550px;
+    background-color: #15BF81;
+  }
+
+}
+
 
 /*--------------------------------------------------------------
 bloco 2
 # sobre
+
+  #main{
+    height: 550px;
+    background-color: #15BF81;
+  }
 --------------------------------------------------------------*/
 
 
 #sobre{
-
+height: 436px;
 background-color: #ffffff;
 background-size:cover;
 width: auto;
-height: auto;
+display: flex;
+justify-content: center;
 
 }
 
 .texto1 {
-
   text-align: center;
 
 }
 
 .cor{
   color: #131426;
+  font-family: Archivo-Bold;
 }
 
 .txfont{
   color: #131426;
-
+  font-family:Archivo-Regular;
 }
 
 .font1 {
@@ -372,7 +416,7 @@ font-family: Archivo-Bold;
 .font2 {
 text-decoration: none;
 color: #15BF81;
-
+font-family: Archivo-Bold;
 }
 
 /*--------------------------------------------------------------
@@ -382,13 +426,15 @@ bloco 3
 #consultoria {
   background: url("../img/Banner-2.png") center center;
   background-size:cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 450px;
+  height: 336px;
+  position: relative;
   flex-direction: row;
   justify-content:flex-end;
   display: flex;
   align-items: center;
-  padding: 80px 320px;
+  padding-right: 320px;
 
 }
 
@@ -434,13 +480,14 @@ bloco 3
   display: flex;
   align-items:flex-end;
 
-
 }
+
 
 /*======== Botão ========*/
 
 .bot_orçamento {
 
+font-family:Archivo-SemiBold;
 /* Auto layout */
 
 display: flex;
@@ -480,53 +527,69 @@ bloco 4
   background-color: #ffffff;
   background-size:cover;
   width: auto;
-  height: auto;
+  height: 336px;
   display: flex;
   justify-content: center;
+
 
 }
 .texto3{
   width: auto;
   height: auto;
   position: relative;
-  padding: 0px 40px;
-
-
+  padding: 15px 40px;
 
 }
 
 .bot3{
 
-  
-
   position: relative;
   display: flex;
   align-items: center;
   padding: 0px 40px;
+  
+
+}
 
 
+.icon_linkedln{
+  padding-right: 8px;
+  width: 28.69px;
+  height: 20.69px;
 }
 
 .font3_1{
   text-decoration: none;
   color: #16F28B;
   font-family: Archivo-Bold;
-
+  margin: 0;
+  padding-left: 2px;
 }
 
 .font3_2{
   text-decoration: none;
   color: #16F28B;
   font-family: Archivo-Bold;
+  padding-left: 2px;
+}
+
+.subtexto{
+padding-top: 5px;
 
 }
 
+.font3_3{
+  font-family: Inter-Medium;
+  margin: 0;
+  color: #131426;
+}
 
 
 .bot_linkedln {
 
 /*=========== Botão ===========*/
 
+font-family:Archivo-SemiBold;
 
 /* Auto layout */
 display: flex;
@@ -1098,6 +1161,9 @@ bloco 5
 
 }
 */
+#contact.contact.section-bg{
+  height: 336px;
+}
 
 .contact{
   display:flex;
@@ -1190,9 +1256,9 @@ flex-grow: 0;
 /* Auto layout */
 
 display: flex;
-padding: 10px 0px;
+padding: 10px 6px;
 max-height: 30px;
-gap: 8px;
+gap: 12px;
 width: 250px;
 font-family:Archivo-Regular;
 
@@ -1208,6 +1274,11 @@ flex-grow: 0;
   width: 200px;
 }
 
+.icon_loc{
+  width: 12px;
+  height: 18px;
+
+}
 
 .linkedln{
 /* linkedln */
@@ -1241,6 +1312,10 @@ flex-grow: 0; /*mudar depois*/
 
 }
 
+.icon_linkedln2{
+  width: 20.69px;
+  height: 20.69px;
+}
 
 
 .instagram{
@@ -1254,8 +1329,8 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 flex-wrap: wrap;
-padding: 0px;
-gap: 8px;
+padding: 0px 2px;
+gap: 9px;
 
 width: 158px;
 height: 24px;
@@ -1276,6 +1351,10 @@ flex-grow: 0;
   height: 17px;
 }
 
+.icon_ig{
+  width: 18px;
+  height: 18px;
+}
 
 
 .title2{
@@ -1325,7 +1404,7 @@ align-items: flex-start;
 gap: 10px;
 padding: 0px 20px;
 width: 350px;
-height: 186px;
+height: 110px;
 color: #000000;
 
 /* Inside auto layout */
@@ -1366,6 +1445,10 @@ flex-grow: 0;
 
 }
 
+.icon_email{
+  width: 18px;
+  height: 12px;
+}
 
 
 .phone{
@@ -1395,7 +1478,10 @@ width: 250px;
 
 }
 
-
+.icon_phone{
+  width: 18px;
+  height: 18px;
+}
 
 
 
