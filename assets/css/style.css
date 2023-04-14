@@ -1356,6 +1356,15 @@ flex-grow: 0;
   height: 18px;
 }
 
+.ig{
+  color: #000000;
+}
+
+.ig:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
 
 .title2{
 /* Entre em contato conosco: */
