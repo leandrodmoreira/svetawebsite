@@ -1,7 +1,5 @@
       name: Deploy via ftp
       on: push
-      branches:
-            - produção
       jobs:
         deploy:
           name: Deploy
