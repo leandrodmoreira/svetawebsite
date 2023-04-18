@@ -13,6 +13,6 @@
               host: ${{ secrets.ftp_HOST }} 
               user: ${{ secrets.ftp_USER }}
               password: i3Lh21m1QMQoDSPZUvoZ@
-              localDir: "sveta1"
+              localDir: "home"
 
               
