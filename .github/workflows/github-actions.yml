@@ -1,8 +1,5 @@
- name: Deploy via ftp
-      on:
-       push:
-        branches:
-          - produção
+      name: Deploy via ftp
+      on: push
       jobs:
         deploy:
           name: Deploy
