@@ -13,7 +13,7 @@
               host: ${{ secrets.ftp_HOST }} 
               user: ${{ secrets.ftp_USER }}
               password: ${{ secrets.ftp_PASS }}
-              localDir: "/github/workspace/svetawebsite"
+              localDir: "home/sveta1/"
 
  
 
