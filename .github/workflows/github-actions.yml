@@ -1,5 +1,6 @@
       name: Deploy via ftp
-      on: push
+      on: 
+       push:
         branches:
          -produção
       jobs:
