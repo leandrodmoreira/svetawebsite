@@ -13,7 +13,7 @@
               host: ${{ secrets.ftp_HOST }} 
               user: ${{ secrets.ftp_USER }}
               password: ${{ secrets.ftp_PASS }}
-              server-dir: home/sveta1
+              server-dir: home/sveta1/
 
 
  
