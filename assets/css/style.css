@@ -70,37 +70,59 @@ barra superior
   z-index: 10;
   position: relative;
   display: flex;
+  justify-content: space-between;
 
 
 }
 .container-fluid   {
  
   justify-content: space-between;
+  flex-direction: row;
   display: flex;
-  padding: 0px 40px;
-  gap: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
   position:relative;
-  top: 0px;
   align-items: center;
+  margin: 0;
 
+}
+
+.sob{
+  display: flex;
+  justify-content: space-between;
 }
 
 .buttons{
-  display: flex;
+  width: 280px;
+  display:flex;
   font-size: 17px;
+  margin-left: 18px;
+  margin-right: 18px;
+
 }
+
 .bot1{
   color: #FFFFFF;
-  padding: 0px 28px;
+  padding-right: 28px;
   font-family: Archivo-SemiBold;
 
 }
 
 .bot2{
   color: #FFFFFF;
-  padding: 0px 28px;
+  padding-left: 28px;
   font-family: Archivo-SemiBold;
 
+}
+.menu{
+  display: flex;
+  padding-left: 10px;
+}
+
+.burguer{
+  width: 42px;
+  height: 35px;
+  cursor: pointer;
 }
 
 
@@ -125,6 +147,8 @@ barra superior
 }
 
 
+
+
 /*--------------------------------------------------------------
 Bloco 1
 # Hero Section
@@ -137,6 +161,7 @@ Bloco 1
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
+  background-position:70%;
   display: flex;
 
 }
@@ -144,7 +169,6 @@ Bloco 1
 
 color: #16F28B;
 padding: 0px 12px;
-
 
 }  
 
@@ -298,78 +322,6 @@ display: flex;
   background: #fd8841;
 }
 
-/*--------------------------------------------------------------
-adaptação pra loyalt movel
---------------------------------------------------------------*/
-/*-------header--------*/
-
-
-/*-------hero--------*/
-
-@media (max-width: 837px) {
-  #hero .linha {
-    width: 67%;
-
-  }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-@media (max-width: 580px) {
- .textoprinc{
-  padding-left:45px;
-
-}
-}
-
-@media (max-width: 435px) {
-  #hero h1 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-}
-
-/*@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-*/
-/*-------sobre--------*/
-
-
-
-/*-------consultoria--------*/
-
-
-
-/*-------linkedIn--------*/
-
-
-
-/*-------main--------*/
-
-
-
-@media (max-width: 950px) {
-  #main{
-    height: 370px;
-    background-color: #15BF81;
-  }
-
-}
-
-@media (max-width: 582px) {
-  #main{
-    height: 550px;
-    background-color: #15BF81;
-  }
-
-}
-
 
 /*--------------------------------------------------------------
 bloco 2
@@ -383,7 +335,6 @@ bloco 2
 
 
 #sobre{
-height: 436px;
 background-color: #ffffff;
 background-size:cover;
 width: auto;
@@ -434,9 +385,12 @@ bloco 3
   justify-content:flex-end;
   display: flex;
   align-items: center;
-  padding-right: 320px;
 
 }
+.txt_bot{
+  margin-right: 17%;
+}
+
 
 .texto2 {
 
@@ -444,10 +398,8 @@ bloco 3
   position: relative;
   width: 400px;
   height: 103px;
-
   left: 10x;
-  max-width: 400px;
-  max-height: 336px;
+
 
 
 }
@@ -521,18 +473,18 @@ flex-grow: 0;
 
 /*--------------------------------------------------------------
 bloco 4
-# Linkedln
+# Linkedin
 --------------------------------------------------------------*/
-#Linkedln {
+.Linkedin {
+  display: flex;
+  justify-content: center;
   background-color: #ffffff;
   background-size:cover;
   width: auto;
   height: 336px;
-  display: flex;
-  justify-content: center;
-
 
 }
+
 .texto3{
   width: auto;
   height: auto;
@@ -546,13 +498,13 @@ bloco 4
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0px 40px;
-  
+  margin-right: 90px;
+  padding-left: 40px;
 
 }
 
 
-.icon_linkedln{
+.icon_linkedin{
   padding-right: 8px;
   width: 28.69px;
   height: 20.69px;
@@ -584,8 +536,12 @@ padding-top: 5px;
   color: #131426;
 }
 
+.bot_linkedin:hover{
+  color: #15BF81;
+}
 
-.bot_linkedln {
+
+.bot_linkedin {
 
 /*=========== Botão ===========*/
 
@@ -615,9 +571,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 
-
 }
-
 
 
 /*--------------------------------------------------------------
@@ -1259,7 +1213,7 @@ display: flex;
 padding: 10px 6px;
 max-height: 30px;
 gap: 12px;
-width: 250px;
+width: 220px;
 font-family:Archivo-Regular;
 
 
@@ -1270,8 +1224,9 @@ flex-grow: 0;
 
 }
 
-.txt{
+.loc{
   width: 200px;
+  color: #000000;
 }
 
 .icon_loc{
@@ -1280,8 +1235,8 @@ flex-grow: 0;
 
 }
 
-.linkedln{
-/* linkedln */
+.linkedin{
+/* linkedin */
 
 
 /* Auto layout */
@@ -1307,12 +1262,13 @@ flex-grow: 0; /*mudar depois*/
 }
 
 
-.txt2{
+.lkd{
   width: 200px;
+  color: #000000;
 
 }
 
-.icon_linkedln2{
+.icon_linkedin2{
   width: 20.69px;
   height: 20.69px;
 }
@@ -1346,11 +1302,6 @@ flex-grow: 0;
 }
 
 
-.txt3{
-  width: 126px;
-  height: 17px;
-}
-
 .icon_ig{
   width: 18px;
   height: 18px;
@@ -1358,6 +1309,8 @@ flex-grow: 0;
 
 .ig{
   color: #000000;
+  width: 126px;
+  height: 17px;
 }
 
 .ig:hover {
@@ -1370,7 +1323,7 @@ flex-grow: 0;
 /* Entre em contato conosco: */
 
   height: 26px;
-  width: 350px;
+  width: 205px;
   
   font-style: normal;
   font-weight: 400;
@@ -1412,7 +1365,7 @@ flex-direction: column;
 align-items: flex-start;
 gap: 10px;
 padding: 0px 20px;
-width: 350px;
+width: 240px;
 height: 110px;
 color: #000000;
 
@@ -1454,6 +1407,10 @@ flex-grow: 0;
 
 }
 
+.mail{
+  color: #000000;
+}
+
 .icon_email{
   width: 18px;
   height: 12px;
@@ -1483,7 +1440,6 @@ font-family:Archivo-Regular;
 flex: none;
 order: 2;
 flex-grow: 0;
-width: 250px;
 
 }
 
@@ -1492,13 +1448,13 @@ width: 250px;
   height: 18px;
 }
 
+.phn{
+  color: #000000;
+}
 
-
-
-
-
-
-
+.phn:hover , .mail:hover , .lkd:hover , .loc:hover{
+  color: #000000;
+}
 
 
 #contact{
@@ -1636,6 +1592,267 @@ height: auto;
     transform: rotate(360deg);
   }
 }
+
+
+/*--------------------------------------------------------------
+adaptação pra loyalt movel
+--------------------------------------------------------------*/
+
+/*-------header--------*/
+
+
+@media (max-width: 515px) {
+
+  #header{
+  height: 130px;
+  }
+
+}
+
+@media (min-width: 515px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 515px) {
+.buttons{
+  display: none;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  
+}
+.bot1{
+  padding-top: 15px;
+  padding-right: 0px;
+
+}
+
+.bot2{
+  padding-left: 0px;
+
+}
+
+}
+@media (max-width: 560px) {
+  .container-fluid{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+}
+@media (max-width: 515px) {
+  .sob{
+  width: 100%;
+  }
+
+  .container-fluid{
+    flex-direction: column;
+  }
+}
+
+
+/*-------hero--------*/
+
+
+
+@media (max-width: 837px) {
+  #hero .linha {
+    width: 72%;
+    max-width: 455px;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .textoprinc{
+    padding-left:95px;
+  }
+  
+}
+
+@media (max-width: 580px) {
+ .textoprinc{
+  padding-left:45px;
+
+}
+#hero .linha {
+  max-width: 410px;
+  min-width: 400px;
+}
+}
+
+@media (max-width: 435px) {
+  #hero h1 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .textoprinc{
+    padding-left:20px;
+  
+  }
+
+  #hero .linha {
+    min-width: 305px;
+  }
+
+}
+@media (max-width: 334px) {
+  #hero h1 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #hero .linha {
+    min-width: 254px;
+  }
+}
+
+  @media (max-width: 300px) {
+  #hero h1 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    #hero .linha {
+    min-width:max-content;
+  }
+
+}
+/*@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+*/
+
+
+/*-------sobre--------*/
+
+
+@media (max-width: 1740px) {
+  
+
+
+  .font2{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .txfont {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+}
+@media (min-width: 940px) {
+#sobre{
+  height: 436px;
+
+}
+}
+
+
+/*-------consultoria--------*/
+
+
+@media (max-width: 1000px) {
+  .txt_bot{
+    margin-right: 7.5%;
+
+  }
+
+}
+
+@media (max-width: 800px) {
+#consultoria{
+  justify-content: center;
+}
+
+.txt_bot{
+    margin-right: 0%;
+
+
+  }
+
+.texto2{
+  width: 330px;
+}
+}
+
+@media (max-width: 330px) {
+  .texto2{
+    width: auto;
+  
+  }
+}
+
+
+/*-------linkedin--------*/
+
+
+@media (max-width: 686px) {
+ 
+  .Linkedin{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+}
+@media (max-width: 380px) {
+.bot3{
+  margin-right: 0px;
+  padding-left: 0px;
+}
+.texto3{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bot3{
+  padding-right: 50px;
+}
+}
+
+@media (max-width: 340px) {
+  .bot3{
+    padding-right: 0px;
+  }
+  }
+
+
+/*-------main--------*/
+
+
+@media (max-width: 950px) {
+  #main{
+    height: 370px;
+    background-color: #15BF81;
+  }
+
+}
+
+@media (max-width: 582px) {
+  #main{
+    height: 550px;
+    background-color: #15BF81;
+  }
+  .logo2 a{
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 502px) {
+#contact{
+  justify-content: center;
+}
+}
+
 
 /*--------------------------------------------------------------
 # Footer
