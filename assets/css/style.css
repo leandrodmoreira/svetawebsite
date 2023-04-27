@@ -92,28 +92,49 @@ barra superior
   justify-content: space-between;
 }
 
+
+
 .buttons{
   width: 280px;
   display:flex;
   font-size: 17px;
   margin-left: 18px;
   margin-right: 18px;
-
+  opacity: 0;
+  transition: opacity .3s ease;
+  
+}
+.buttons.fade{
+  opacity: 1;
+  
+  
 }
 
 .bot1{
   color: #FFFFFF;
   padding-right: 28px;
   font-family: Archivo-SemiBold;
+}
 
+.pointer1{
+  cursor:default;
+}
+.pointer1.section1{
+  cursor:pointer;
 }
 
 .bot2{
   color: #FFFFFF;
   padding-left: 28px;
   font-family: Archivo-SemiBold;
-
 }
+.pointer2{
+  cursor:default;
+}
+.pointer2.section2{
+  cursor:pointer;
+}
+
 .menu{
   display: flex;
   padding-left: 10px;
@@ -145,7 +166,6 @@ barra superior
   margin: 0;
   max-height: 40px;
 }
-
 
 
 
@@ -1601,7 +1621,7 @@ adaptação pra loyalt movel
 /*-------header--------*/
 
 
-@media (max-width: 515px) {
+@media (max-width: 485px) {
 
   #header{
   height: 130px;
@@ -1615,15 +1635,16 @@ adaptação pra loyalt movel
     flex-direction: column;
     align-items: center;
   }
+  .buttons{
+    opacity: 1;
+  }
 }
 
 @media (max-width: 515px) {
 .buttons{
-  display: none;
   flex-direction: column;
   width: auto;
   align-items: center;
-  
 }
 .bot1{
   padding-top: 15px;
@@ -1662,30 +1683,41 @@ adaptação pra loyalt movel
 @media (max-width: 837px) {
   #hero .linha {
     width: 72%;
-    max-width: 455px;
+    max-width: 580px;
+    min-width: 550px;
   }
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 38px;
+    line-height: 42px;
   }
   .textoprinc{
     padding-left:95px;
   }
-  
+
 }
 
-@media (max-width: 580px) {
+@media (max-width: 610px) {
  .textoprinc{
   padding-left:45px;
 
 }
 #hero .linha {
-  max-width: 410px;
+  max-width: 500px;
   min-width: 400px;
 }
+
+#hero h1 {
+  font-size: 28px;
+  line-height: 36px;
+}
+.textoprinc{
+  padding-left:95px;
 }
 
-@media (max-width: 435px) {
+
+}
+
+@media (max-width: 485px) {
   #hero h1 {
     font-size: 22px;
     line-height: 24px;

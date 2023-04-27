@@ -46,20 +46,19 @@
       </div>
       
       <div class="menu">
-         <i onclick="clickMenu()"><img src="assets/img/menu.png" alt="" class="burguer"></i>
+         <i id = "aaa" onclick="clickMenu()"><img src="assets/img/menu.png" alt="" class="burguer"></i>
       </div>
     </div>
 
       <div class="buttons" id="buttons_func">
-        
         <div class="bot1">
-            <a href="#Consultoria">Consultoria</a>
+            <a class ="pointer1" href="#Consultoria">Consultoria</a>
         
         </div>
   
   
         <div class="bot2">
-          <a href="#Entre_em_contato">Entre em contato</a>
+          <a class ="pointer2"href="#Entre_em_contato">Entre em contato</a>
         </div>
       </div>
 
@@ -466,14 +465,20 @@
 
   <script>
     function clickMenu(){
-      if(buttons_func.style.display == 'flex') {
-        buttons_func.style.display = 'none'
-      } else {
-        buttons_func.style.display = 'flex'
-      }
-      
+
     }
-    
+    const button = document.querySelector('#aaa');
+    button.addEventListener('click', function(event) {
+    document.querySelector('.buttons')
+    .classList.toggle('fade');
+
+    document.querySelector('.pointer1')
+    .classList.toggle('section1');
+
+    document.querySelector('.pointer2')
+    .classList.toggle('section2');
+
+    })
   </script>
 
 </body>
