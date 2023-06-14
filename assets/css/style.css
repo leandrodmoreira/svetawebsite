@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
 }
 
-.zap{
+.botwpp{
 display:flex;
 height: 80px;
 justify-content: center;
@@ -39,17 +39,18 @@ padding-right: 30px;
 
 }
 
-.logozap{
+#logowpp{
   width: 80px;
   height: 80px;
-  transition: .2s;
+  transition: all 0.2s ease-in-out;
 }
 
-.logozap:hover {
+#logowpp:hover {
   width: 70px;
   height: 70px;
-  transition: .2s;
+  
 }
+
 
 /*--------------------------------------------------------------
 importação de fontes
@@ -126,11 +127,12 @@ barra superior
   margin-right: 18px;
   opacity: 0;
   transition: opacity .3s ease;
-  
+  pointer-events: none;
+
 }
 .buttons.fade{
   opacity: 1;
-  
+  pointer-events: visible;
   
 }
 
@@ -1662,6 +1664,7 @@ adaptação pra loyalt movel
   }
   .buttons{
     opacity: 1;
+    pointer-events:visible;
   }
 }
 
@@ -1892,7 +1895,7 @@ adaptação pra loyalt movel
     background-color: #15BF81;
   }
 
-  .zap{
+  .botwpp{
     margin-top: 20px;
   }
 
@@ -1919,7 +1922,7 @@ adaptação pra loyalt movel
   background-color: #15BF81;
 }
 
-.zap{
+.botwpp{
   flex-direction: column;
   margin-left: 100px;
   margin-right: 100px;

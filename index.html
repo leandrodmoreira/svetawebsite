@@ -49,7 +49,7 @@
       </div>
       
       <div class="menu">
-         <i id = "aaa" onclick="clickMenu()"><img src="assets/img/menu.png" alt="" class="burguer"></i>
+         <i id = "burg" onclick="clickMenu()"><img src="assets/img/menu.png" alt="" class="burguer"></i>
       </div>
     </div>
 
@@ -381,7 +381,7 @@
 
                 <!--<div class="col-lg-3 col-md-5 mb-5 mb-md-0">-->
                     <div class="instagram">
-                      <a><img src="assets/icons/ig.png" alt="" class="icon_ig"></a>
+                      <a href="https://www.instagram.com/svetatecnologia/"><img src="assets/icons/ig.png" alt="" class="icon_ig"></a>
                       <a href="https://www.instagram.com/svetatecnologia/" class="ig">@svetatecnologia</a>
                     </div>
           </div>
@@ -440,8 +440,8 @@
         </div> -->
 
       <!--</div>-->
-      <div class="zap">
-        <a href="https://api.whatsapp.com/send?phone=554187154000"><img src="assets/icons/whatsapp1.png" alt="" class="logozap"></a>
+      <div class="botwpp">
+        <a href="https://api.whatsapp.com/send?phone=554187154000"><img src="assets/icons/whatsapp1.png" alt="" id="logowpp"></a>
         </div>
 
     </section><!-- End Contact Us Section -->
@@ -482,7 +482,7 @@
     function clickMenu(){
 
     }
-    const button = document.querySelector('#aaa');
+    const button = document.querySelector('#burg');
     button.addEventListener('click', function(event) {
     document.querySelector('.buttons')
     .classList.toggle('fade');
