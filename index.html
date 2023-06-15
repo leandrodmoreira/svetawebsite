@@ -32,6 +32,9 @@
   
 </head>
 
+
+ </div>
+
 <body>
   <!-- ======= barra superior ======= -->
   <!-- ======= Header ======= -->
@@ -46,7 +49,7 @@
       </div>
       
       <div class="menu">
-         <i id = "aaa" onclick="clickMenu()"><img src="assets/img/menu.png" alt="" class="burguer"></i>
+         <i id = "burg" onclick="clickMenu()"><img src="assets/img/menu.png" alt="" class="burguer"></i>
       </div>
     </div>
 
@@ -123,6 +126,8 @@
         </div>
         <div class="text-center"><button type="submit">Notify me!</button></div>
       </form>-->
+
+
     </div>
   </section><!-- #hero -->
     
@@ -347,9 +352,10 @@
     </section><!-- End Frequenty Asked Questions Section -->
 
     <!-- ======= bloco5 Contact Us Section ======= -->
+    
     <section id="contact" class="contact section-bg">
      <!-- <div class="container">-->
-
+      
         <div class="logo2">
           <a href="index.html"><img src="assets/img/logo-principal-branco.png" alt="" class="img-fluid2"></a>
        </div>
@@ -375,7 +381,7 @@
 
                 <!--<div class="col-lg-3 col-md-5 mb-5 mb-md-0">-->
                     <div class="instagram">
-                      <a><img src="assets/icons/ig.png" alt="" class="icon_ig"></a>
+                      <a href="https://www.instagram.com/svetatecnologia/"><img src="assets/icons/ig.png" alt="" class="icon_ig"></a>
                       <a href="https://www.instagram.com/svetatecnologia/" class="ig">@svetatecnologia</a>
                     </div>
           </div>
@@ -395,7 +401,9 @@
                     <a><img src="assets/icons/Telefone.png" alt="" class="icon_phone"></a>
                     <a class="phn">+55 41 998715-4000</a>
                   </div>
+                  
              </div>
+             
              <a id="Entre_em_contato"></a><!--bot_ancora_2-->
             <!--<div class="social-links">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -432,9 +440,16 @@
         </div> -->
 
       <!--</div>-->
+      <div class="botwpp">
+        <a href="https://api.whatsapp.com/send?phone=554187154000"><img src="assets/icons/whatsapp1.png" alt="" id="logowpp"></a>
+        </div>
+
     </section><!-- End Contact Us Section -->
 
+
+
   </main><!-- End #main -->
+
 
   <!-- ======= Footer =======
   <footer id="footer">
@@ -467,7 +482,7 @@
     function clickMenu(){
 
     }
-    const button = document.querySelector('#aaa');
+    const button = document.querySelector('#burg');
     button.addEventListener('click', function(event) {
     document.querySelector('.buttons')
     .classList.toggle('fade');
