@@ -13,4 +13,5 @@
               host: ${{ secrets.ftp_HOST }} 
               user: ${{ secrets.ftp_USER }}
               password: ${{ secrets.ftp_PASS }}
-              server-dir: /public_html/paginadeteste
+              server-dir: /public_html
+              remoteDir: /public_html/paginadeteste
