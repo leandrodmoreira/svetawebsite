@@ -1,4 +1,4 @@
-      name: Deploy via ftp
+      name: Deploy via ftp pagina teste
       on: push
       jobs:
         deploy:
@@ -13,4 +13,4 @@
               host: ${{ secrets.ftp_HOST }} 
               user: ${{ secrets.ftp_USER }}
               password: ${{ secrets.ftp_PASS }}
-              server-dir: files/PaginaDeTeste/
+              server-dir: home/sveta1/PaginaDeTeste/
