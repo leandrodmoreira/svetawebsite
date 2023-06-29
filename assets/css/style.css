@@ -435,6 +435,9 @@ bloco 3
 }
 .txt_bot{
   margin-right: 17%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 
@@ -443,9 +446,6 @@ bloco 3
   text-align: left;
   position: relative;
   width: 400px;
-  height: 103px;
-  left: 10x;
-
 
 
 }
@@ -455,24 +455,16 @@ bloco 3
   text-decoration: none;
   color: #16F28B;
   font-family: Archivo-Bold;
+  margin-top: 2px;
   }
-
 
 .font2_2{  
   text-decoration: none;
-  color: #16F28B;
-  font-family: Archivo-Bold;
-  }
-
-
-.font2_3{
-  text-decoration: none;
   color: #ffffff;
   font-family: Inter-Medium;
-}
+  }  
 
 .bot{
-  padding: 30px 0px;
   position:sticky;
   flex-direction: row;
   display: flex;
@@ -480,10 +472,13 @@ bloco 3
 
 }
 
+.bot_suporte:hover {
+color: #15BF81;
+}
 
 /*======== Botão ========*/
 
-.bot_orçamento {
+.bot_suporte {
 
 font-family:Archivo-SemiBold;
 /* Auto layout */
@@ -1273,7 +1268,7 @@ flex-grow: 0;
 
 .loc{
   width: 200px;
-  color: #000000;
+  color: #131426;
 }
 
 .icon_loc{
@@ -1311,7 +1306,7 @@ flex-grow: 0; /*mudar depois*/
 
 .lkd{
   width: 200px;
-  color: #000000;
+  color: #131426;
 
 }
 
@@ -1355,14 +1350,9 @@ flex-grow: 0;
 }
 
 .ig{
-  color: #000000;
+  color: #131426;
   width: 126px;
   height: 17px;
-}
-
-.ig:hover {
-  color: #000000;
-  text-decoration: none;
 }
 
 
@@ -1455,7 +1445,7 @@ flex-grow: 0;
 }
 
 .mail{
-  color: #000000;
+  color: #131426;
 }
 
 .icon_email{
@@ -1496,11 +1486,11 @@ flex-grow: 0;
 }
 
 .phn{
-  color: #000000;
+  color: #131426;
 }
 
-.phn:hover , .mail:hover , .lkd:hover , .loc:hover{
-  color: #000000;
+.phn:hover , .mail:hover , .lkd:hover , .loc:hover , .ig:hover{
+  color: #131426;
 }
 
 
