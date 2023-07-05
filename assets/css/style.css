@@ -1841,6 +1841,13 @@ adaptação pra loyalt movel
   }
 }
 
+@media (max-width: 350px) {
+  .bot_suporte{
+    width: 250px;
+  
+  }
+}
+
 
 /*-------linkedin--------*/
 
