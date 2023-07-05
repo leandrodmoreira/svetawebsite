@@ -1,4 +1,4 @@
-      name: Deploy via ftp pagina teste
+      name: Deploy via ftp pagina principal
       on: push
       jobs:
         deploy:
