@@ -1,4 +1,4 @@
-      name: Deploy via ftp pagina teste
+      name: Deploy via ftp pagina test
       on: 
        push:
         branches:
