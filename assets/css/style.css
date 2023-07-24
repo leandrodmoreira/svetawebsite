@@ -120,7 +120,7 @@ barra superior
 
 
 .buttons{
-  width: 280px;
+
   display:flex;
   font-size: 17px;
   margin-left: 18px;
@@ -136,30 +136,35 @@ barra superior
   
 }
 
-.bot1{
+#bot1{
   color: #FFFFFF;
   padding-right: 28px;
   font-family: Archivo-SemiBold;
 }
-
-.pointer1{
-  cursor:default;
-}
-.pointer1.section1{
-  cursor:pointer;
+#bot1:hover{
+  color: #15BF81;
 }
 
-.bot2{
+
+#bot2{
+  width: 190px;
+  color: #FFFFFF;
+  padding: 0px 28px;
+  font-family: Archivo-SemiBold;
+}
+#bot2:hover{
+  color: #15BF81;
+}
+
+#bot3{
   color: #FFFFFF;
   padding-left: 28px;
   font-family: Archivo-SemiBold;
 }
-.pointer2{
-  cursor:default;
+#bot3:hover{
+  color: #15BF81;
 }
-.pointer2.section2{
-  cursor:pointer;
-}
+
 
 .menu{
   display: flex;
@@ -211,17 +216,7 @@ Bloco 1
   display: flex;
 
 }
-#hero a{
 
-color: #16F28B;
-padding: 0px 12px;
-
-}  
-
-#hero b{
-  padding: 0px 12px;
-  
-}  
 
 .hero-container{
 display: flex;
@@ -236,11 +231,22 @@ display: flex;
 .fontbl1{
   font-family: Archivo-Regular;
 }
-.fontbl2{
+.fontbl1_color{
+  color: #16F28B;
   font-family: Archivo-Regular;
+  padding-left: 12px;
 }
-.fontbl3{
+.fontbl1_color:hover{
+  color: #16F28B;
+}
+
+.fontbl1_2{
+  color: #fff;
+  padding-left: 12px;
   font-family: Archivo-Bold;
+}
+.fontbl1_2:hover{
+color: #fff;
 }
 
 .linha{
@@ -370,13 +376,7 @@ display: flex;
 
 
 /*--------------------------------------------------------------
-bloco 2
-# sobre
-
-  #main{
-    height: 550px;
-    background-color: #15BF81;
-  }
+bloco 2 sobre
 --------------------------------------------------------------*/
 
 
@@ -397,6 +397,11 @@ justify-content: center;
 .cor{
   color: #131426;
   font-family: Archivo-Bold;
+  font-weight: bold;
+}
+
+.cor:hover{
+  color: #131426;
 }
 
 .txfont{
@@ -408,12 +413,14 @@ justify-content: center;
 text-decoration: none;
 color: #15BF81;
 font-family: Archivo-Bold;
+font-weight: bold;
 
 }
 .font2 {
 text-decoration: none;
 color: #15BF81;
 font-family: Archivo-Bold;
+font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -455,6 +462,7 @@ bloco 3
   text-decoration: none;
   color: #16F28B;
   font-family: Archivo-Bold;
+  font-weight: bold;
   margin-top: 2px;
   }
 
@@ -534,7 +542,7 @@ bloco 4
 
 }
 
-.bot3{
+.bot4{
 
   position: relative;
   display: flex;
@@ -555,6 +563,7 @@ bloco 4
   text-decoration: none;
   color: #16F28B;
   font-family: Archivo-Bold;
+  font-weight: bold;
   margin: 0;
   padding-left: 2px;
 }
@@ -563,6 +572,7 @@ bloco 4
   text-decoration: none;
   color: #16F28B;
   font-family: Archivo-Bold;
+  font-weight: bold;
   padding-left: 2px;
 }
 
@@ -1207,6 +1217,7 @@ flex-grow: 0;
 
 .title-font{
   font-family: Archivo-Bold;
+  font-weight: bold;
 }
 
 
@@ -1664,24 +1675,17 @@ adaptação pra loyalt movel
   width: auto;
   align-items: center;
 }
-.bot1{
+#bot1{
   padding-top: 15px;
   padding-right: 0px;
 
 }
 
-.bot2{
+#bot3{
   padding-left: 0px;
 
 }
 
-}
-@media (max-width: 560px) {
-  .container-fluid{
-    padding-left: 20px;
-    padding-right: 20px;
-
-  }
 }
 @media (max-width: 515px) {
   .sob{
@@ -1690,6 +1694,23 @@ adaptação pra loyalt movel
 
   .container-fluid{
     flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+.buttons{
+flex-wrap: wrap;
+}
+
+  .container-fluid{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  #bot2{
+    padding: 0px;
+    width: 134px;
   }
 }
 
@@ -1863,7 +1884,7 @@ adaptação pra loyalt movel
 
 }
 @media (max-width: 380px) {
-.bot3{
+.bot4{
   margin-right: 0px;
   padding-left: 0px;
 }
@@ -1871,23 +1892,23 @@ adaptação pra loyalt movel
   padding-left: 20px;
   padding-right: 20px;
 }
-.bot3{
+.bot4{
   padding-right: 50px;
 }
 }
 
 @media (max-width: 340px) {
-  .bot3{
+  .bot4{
     padding-right: 0px;
   }
   }
 
 
-/*-------main--------*/
+/*-------Contact Us--------*/
 
 
 @media (max-width: 970px) {
-  #main{
+  #footer{
     height: 370px;
     background-color: #15BF81;
   }
@@ -1900,7 +1921,7 @@ adaptação pra loyalt movel
 
 
 @media (max-width: 582px) {
-  #main{
+  #footer{
     height: 550px;
     background-color: #15BF81;
   }
@@ -1914,7 +1935,7 @@ adaptação pra loyalt movel
   justify-content: center;
 }
 
-#main{
+#footer{
   height: 650px;
   background-color: #15BF81;
 }
